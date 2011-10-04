@@ -9,6 +9,7 @@ gem 'sass-rails', '3.1.0'
 gem 'coffee-script', '2.2.0'
 gem 'uglifier', '1.0.2'
 gem 'therubyracer', '0.9.4'
+gem 'rack', '1.3.4'
 
 # Rails 3.1 - JavaScript
 gem 'jquery-rails', '1.0.13'
