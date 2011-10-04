@@ -18,11 +18,11 @@ gem 'cancan', '1.6.5'
 gem 'devise', '1.4.7'
 gem 'exception_notification_rails3', '1.2.0', :require => 'exception_notifier'
 gem 'formtastic', '1.2.4'
+gem 'mysql'
 gem 'paperclip', '2.4.1'
 gem 'inherited_resources', '1.2.1'
 gem 'RedCloth', '4.2.7'
 gem 'show_for', '0.2.4'
-gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'whenever', '0.6.8', :require => false
 
 # Bundle gems for the local environment. Make sure to
