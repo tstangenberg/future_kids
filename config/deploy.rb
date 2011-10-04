@@ -13,6 +13,7 @@ set :default_run_options, { :pty => true }
 set :repository, "git@github.com:panter/future_kids.git"
 set :ssh_options, {:forward_agent => true}
 set :use_sudo, false
+set :branch, 'mysql'
 
 after "deploy", "deploy:cleanup"
 
