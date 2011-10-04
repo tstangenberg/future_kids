@@ -124,7 +124,7 @@ GEM
       cocaine (>= 0.0.2)
       mime-types
     polyglot (0.3.2)
-    rack (1.3.2)
+    rack (1.3.4)
     rack-cache (1.0.3)
       rack (>= 0.4)
     rack-mount (0.8.3)
@@ -231,7 +231,7 @@ DEPENDENCIES
   json (= 1.5.4)
   mysql
   paperclip (= 2.4.1)
-  rack (= 1.3.2)
+  rack (= 1.3.4)
   rails (= 3.1.0)
   rb-fsevent
   rspec-rails
