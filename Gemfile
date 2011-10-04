@@ -22,6 +22,7 @@ gem 'paperclip', '2.4.1'
 gem 'inherited_resources', '1.2.1'
 gem 'RedCloth', '4.2.7'
 gem 'show_for', '0.2.4'
+gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'whenever', '0.6.8', :require => false
 
 # Bundle gems for the local environment. Make sure to
@@ -38,6 +39,6 @@ group :development, :test do
   gem 'growl'
   gem 'factory_girl_rails'
   gem 'ruby-debug'
-  gem 'capistrano', '2.8.0'
+  gem 'capistrano', '2.9.0'
   gem 'capistrano-ext'
 end
