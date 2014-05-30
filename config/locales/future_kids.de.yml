@@ -11,7 +11,7 @@ de:
       comment: Kommentar
       school: Schule
       principal: "SL/QUIMS-Verantwortliche/r"
-      review: "Gepsrächsdokumentation"
+      review: "Gesprächsdokumentation"
 
     attributes:
       kid:
@@ -162,4 +162,8 @@ de:
       '2': Mittel
       '3': Tief
 
-
+  crud:
+    action:
+      edit_schedules: Stundenplan bearbeiten
+      new_journal: Neues Lernjournal
+      new_review: Neues Gespräch

@@ -20,100 +20,70 @@
         .col-md-3
           .logo=image_tag('logo.jpg')
         .col-md-9
-          = image_tag 'teaser.jpg'
+          = image_tag 'teaser.jpg', size: '685x81'
 
     - if user_signed_in?
-      #nav{data: { spy: "affix", 'offset-top' => '90' }}
-        .container
-          .navbar.navbar-default{role: "navigation"}
-            %ul.nav.navbar-nav
-              -if can? :read, Admin
-                %li= nav_link Admin.model_name.human, admins_path
-              -if can? :read, Kid
-                %li= nav_link Kid.model_name.human, kids_path
-              -# FIXME load of teachers for mentors via cancan does not yet
-              -#       work correctly, see ability_spec.rb. till this is fixed
-              -#       we do not display this option to mentors
-              -if current_user.is_a?(Admin)
-                %li= nav_link Teacher.model_name.human, teachers_path
-                %li= nav_link Mentor.model_name.human, mentors_path
-                %li= nav_link Principal.model_name.human, principals_path
-              -if can? :read, Reminder
-                %li= nav_link Reminder.model_name.human, reminders_path
-              %li= nav_link 'Anleitungen', documents_path
-              -if can? :read, School
-                %li= nav_link School.model_name.human, schools_path
-            %ul.nav.navbar-nav.navbar-right
-              - if user_signed_in?
-                %li
-                  = link_to '#', :class => 'btn dropdown-toggle', 'data-toggle' => 'dropdown' do
+      -# nav gets affixed when scrolling
+      -# nav-wrapper stays on normal flow to assure smooth scrolling
+      -# see register_nav_affix()
+      #nav-wrapper
+        #nav
+          .container
+            .navbar.navbar-default{role: "navigation"}
+              %ul.nav.navbar-nav
+                -if current_user.is_a?(Admin)
+                  %li
+                    = nav_link Admin.model_name.human, admins_path
+                -if can? :read, Kid
+                  %li= nav_link Kid.model_name.human, kids_path
+                -# FIXME load of teachers for mentors via cancan does not yet
+                -#       work correctly, see ability_spec.rb. till this is fixed
+                -#       we do not display this option to mentors
+                -if current_user.is_a?(Admin)
+                  %li= nav_link Teacher.model_name.human, teachers_path
+                  %li= nav_link Mentor.model_name.human, mentors_path
+                  %li= nav_link Principal.model_name.human, principals_path
+                -if can? :read, Reminder
+                  %li= nav_link Reminder.model_name.human, reminders_path
+                %li= nav_link 'Anleitungen & Dokumente', documents_path
+                -if can? :read, School
+                  %li= nav_link School.model_name.human, schools_path
+              %ul.nav.navbar-nav.navbar-right
+                %li.dropdown(style="display: block !important")
+                  = link_to '#', class: 'dropdown-toggle', 'data-toggle' => 'dropdown' do
                     %span.glyphicon.glyphicon-user
                     %span.caret
                   %ul.dropdown-menu
-                    %li.dropdown-header= current_user
-                    %li= link_to 'Profil', current_user
+                    %li= link_to current_user.display_name, current_user
                     %li.divider
                     %li= link_to 'Abmelden', destroy_user_session_path, :method => :delete
 
 
 
-    .container
-      - unless user_signed_in?
+    #main
+      .container
         .row-fluid
           .col-md-3
-            #logo
-              %span
-              = link_to(image_tag('logo.jpg'), '/')
+            - if user_signed_in?
+              %ul.nav
+                = yield :sidebar
+                %li
+                  %h4 Auf dieser Seite
+                  %ul.nav
+                    %li= link_to 'Seitenbeginn', :anchor => 'header'
+                    = yield :subnav
+                    %li= link_to 'Seitenende', :anchor => 'footer'
           .col-md-9
-            #teaser
-              = image_tag 'teaser.jpg'
-      .row-fluid
-        .col-md-3
-          - if user_signed_in?
-            %ul.nav
-              %li
-                %h4 Aktionen
-                %ul.nav
-                  -# actions for resource controllers, not nested
-                  - if defined?(resource) and !defined?(parent)
-                    -if can?(:create, resource_class.new) && %w(index show).include?(controller.action_name)
-                      %li= link_to 'Neuer Eintrag', new_resource_path
-                    -if %w(edit).include?(controller.action_name)
-                      %li= link_to 'Anzeigen', resource_path
-                    -if %w(show).include?(controller.action_name) && can?(:update, resource.class)
-                      %li= link_to 'Bearbeiten', edit_resource_path
-                    -if %w(show).include?(controller.action_name) && can?(:destroy, resource.class)
-                      %li= button_to "Löschen", { :action => "destroy", :id => resource.id }, :method => :delete
+            - flash.each do |name, msg|
+              = boot_alert(msg, name)
+            = yield
 
-                  -# actions for nested resources
-                  - if defined?(parent)
-                    %li= link_to 'Abbrechen', parent
+    #footer
+      .container(style='border-top: 1px solid #eee')
+        .col-md12
+          AOZ
+          Zypressenstrasse 60
+          8040 Zürich
 
-                  -# common actions
-                  -if %w(new edit create update).include?(controller.action_name)
-                    %li
-                      %input.submit_content_form(type='button' value='Speichern')
-                  = yield :actions
-              = yield :sidebar
-              %li
-                %h4 Auf dieser Seite
-                %ul.nav
-                  %li= link_to 'Seitenbeginn', :anchor => 'header'
-                  = yield :subnav
-                  %li= link_to 'Seitenende', :anchor => 'footer'
-        .col-md-9
-          - flash.each do |name, msg|
-            = boot_alert(msg, name)
-          = yield
-
-    .container
-      .row-fluid
-        .col-md-offset-3.col-md9
-          #footer
-            .contact
-              AOZ
-              Zypressenstrasse 60
-              8040 Zürich
-
-              Telefon: 044 415 65 91
-              = mail_to 'info@aoz-futurekids.ch', nil, :encode => "hex"
+          Telefon: 044 415 65 91
+          = mail_to 'info@aoz-futurekids.ch', nil, :encode => "hex"

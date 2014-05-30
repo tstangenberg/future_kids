@@ -28,32 +28,51 @@ $screen-lg-desktop:          $screen-lg-min;
 
 $navbar-default-border: #fff;
 $navbar-default-bg: #fff;
-$grid-float-breakpoint: 900px;
+$grid-float-breakpoint: 1px;
+
+$footer-height: 30px;
+
 
 @import 'bootstrap';
 
 body { }
 
 #teaser {
- height: 90px; // change alos offset-top of #nav when changing this!
- img {
-   max-height: 80px;
- }
+ height: 90px;
  .logo {
-   padding: 15px 0;
+   padding-top: 20px;
  }
+
 }
 
 #nav {
-  border-bottom: 1px solid #ccc;
   background-color: #fff;
-  padding-top: $line-height-computed;
+
+  ul.nav.navbar-nav li a {
+    padding: 10px;
+  }
+
+  .navbar-nav.navbar-right:last-child {
+    margin: 0;
+  }
+
+  > .container {
+    padding-top: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
 }
+
 #nav.affix {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
+}
+
+// Set default height for textareas
+textarea {
+  min-height: 10em;
 }
 
 // Fix show_form breaking for long labels
@@ -71,6 +90,68 @@ body { }
 }
 
 // Fix alignment of text at checkboxes
-.checkbox > label > p {
-  margin: 3px 0;
+.checkbox {
+  margin-bottom: 0px;
+
+  &> label > p {
+    margin: 3px 0 0;
+  }
 }
+
+
+form.schedule {
+  input[type=checkbox], select {
+    display: block;
+    width: 100%;
+  }
+
+}
+
+#main {
+  margin-top: 20px;
+  margin-bottom: $footer-height;
+  min-height: 1000px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  padding-top: 14px;
+  z-index: 1;
+  background-color: #fff;
+  font-size: 10px;
+}
+
+#documents {
+  ol, li {
+    padding: 3px 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  h3, h4 {
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  h3:before, h4:before  {
+    content: "▶ "
+  }
+
+  h3.open:before, h4.open:before  {
+    content: '▼ '
+  }
+
+  ol {
+    display: none;
+  }
+  ol.open {
+    display: block;
+  }
+}
+
+

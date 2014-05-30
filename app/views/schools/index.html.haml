@@ -1,6 +1,11 @@
-%h2 Schulhäuser
+= contextual_links
+= boot_page_title
 
-%ul
-  - collection.each do |school|
-    %li
-      = link_to school.name, school_path(school)
+%table.table.table-striped.table-condensed.table-hover
+  %thead
+    %tr
+      %th Name
+  %tbody
+    - collection.each do |school|
+      %tr
+        %td= link_to school.name, school_path(school)
