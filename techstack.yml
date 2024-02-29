@@ -2,7 +2,7 @@ repo_name: tstangenberg/future_kids
 report_id: 9ef6be3eb0c63f8dad972c3b75632ec9
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-31T10:34:48+00:00'
+timestamp: '2024-02-29T19:44:40+00:00'
 requested_by: tstangenberg
 provider: github
 branch: master
@@ -186,7 +186,7 @@ tools:
   last_updated_by: seb
   last_updated_on: 2012-05-29 14:42:26.000000000 Z
 - name: Paperclip
-  description: 'A file attachment management for ActiveRecord '
+  description: A file attachment management for ActiveRecord
   website_url: https://github.com/thoughtbot/paperclip
   open_source: true
   hosted_saas: false
@@ -667,3 +667,10 @@ tools:
     detected_date: Aug 22
     severity: high
     first_patched: 0.9.20
+  - name: YARD's default template vulnerable to Cross-site Scripting in generated
+      frames.html
+    cve_id: CVE-2024-27285
+    cve_url: https://github.com/advisories/GHSA-8mq4-9jjh-9xrc
+    detected_date: Feb 29
+    severity: moderate
+    first_patched: 0.9.35
