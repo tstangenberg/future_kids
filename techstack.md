@@ -3,21 +3,21 @@
 ## Tech Stack
 tstangenberg/future_kids is built on the following main stack:
 
-- [Twilio SendGrid](http://sendgrid.com) – Transactional Email
-- [Capistrano](http://capistranorb.com/) – Server Configuration and Automation
+- [HAML](http://haml.info/) – Languages
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
 - [Ruby](https://www.ruby-lang.org) – Languages
+- [SQL](https://en.wikipedia.org/wiki/SQL) – Languages
 - [Rails](http://rubyonrails.org/) – Frameworks (Full Stack)
 - [jQuery](http://jquery.com/) – Javascript UI Libraries
 - [PostgreSQL](http://www.postgresql.org/) – Databases
-- [HAML](http://haml.info/) – Languages
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- [Capistrano](http://capistranorb.com/) – Server Configuration and Automation
+- [Capybara](http://jnicklas.github.io/capybara/) – Testing Frameworks
+- [RSpec](https://rspec.info/) – Testing Frameworks
+- [Travis CI](http://travis-ci.com/) – Continuous Integration
+- [Paperclip](https://github.com/thoughtbot/paperclip) – File Uploads
+- [Twilio SendGrid](http://sendgrid.com) – Transactional Email
 - [Devise](https://github.com/plataformatec/devise) – User Management and Authentication
 - [UglifyJS](http://lisperator.net/uglifyjs/) – Javascript Utilities & Libraries
-- [SQL](https://en.wikipedia.org/wiki/SQL) – Languages
-- [RSpec](https://rspec.info/) – Testing Frameworks
-- [Paperclip](https://github.com/thoughtbot/paperclip) – File Uploads
-- [Capybara](http://jnicklas.github.io/capybara/) – Testing Frameworks
-- [Travis CI](http://travis-ci.com/) – Continuous Integration
 
 Full tech stack [here](/techstack.md)
 
@@ -27,21 +27,21 @@ Full tech stack [here](/techstack.md)
 ## Tech Stack
 tstangenberg/future_kids is built on the following main stack:
 
-- <img width='25' height='25' src='https://img.stackshare.io/service/43/kQ_6nwmP.jpg' alt='Twilio SendGrid'/> [Twilio SendGrid](http://sendgrid.com) – Transactional Email
-- <img width='25' height='25' src='https://img.stackshare.io/service/661/5da4e1d78e930197cb7dc002ceafdfda.png' alt='Capistrano'/> [Capistrano](http://capistranorb.com/) – Server Configuration and Automation
+- <img width='25' height='25' src='https://img.stackshare.io/service/1169/Picture_2.png' alt='HAML'/> [HAML](http://haml.info/) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/989/ruby.png' alt='Ruby'/> [Ruby](https://www.ruby-lang.org) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png' alt='SQL'/> [SQL](https://en.wikipedia.org/wiki/SQL) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/990/x57_Lorv.png' alt='Rails'/> [Rails](http://rubyonrails.org/) – Frameworks (Full Stack)
 - <img width='25' height='25' src='https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg' alt='jQuery'/> [jQuery](http://jquery.com/) – Javascript UI Libraries
 - <img width='25' height='25' src='https://img.stackshare.io/service/1028/ASOhU5xJ.png' alt='PostgreSQL'/> [PostgreSQL](http://www.postgresql.org/) – Databases
-- <img width='25' height='25' src='https://img.stackshare.io/service/1169/Picture_2.png' alt='HAML'/> [HAML](http://haml.info/) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/661/5da4e1d78e930197cb7dc002ceafdfda.png' alt='Capistrano'/> [Capistrano](http://capistranorb.com/) – Server Configuration and Automation
+- <img width='25' height='25' src='https://img.stackshare.io/service/2595/capybara.png' alt='Capybara'/> [Capybara](http://jnicklas.github.io/capybara/) – Testing Frameworks
+- <img width='25' height='25' src='https://img.stackshare.io/service/2539/logo.png' alt='RSpec'/> [RSpec](https://rspec.info/) – Testing Frameworks
+- <img width='25' height='25' src='https://img.stackshare.io/service/460/Lu6cGu0z_400x400.png' alt='Travis CI'/> [Travis CI](http://travis-ci.com/) – Continuous Integration
+- <img width='25' height='25' src='https://img.stackshare.io/service/2542/AqsQWFu-_400x400.jpg' alt='Paperclip'/> [Paperclip](https://github.com/thoughtbot/paperclip) – File Uploads
+- <img width='25' height='25' src='https://img.stackshare.io/service/43/kQ_6nwmP.jpg' alt='Twilio SendGrid'/> [Twilio SendGrid](http://sendgrid.com) – Transactional Email
 - <img width='25' height='25' src='https://img.stackshare.io/service/1432/devise.png' alt='Devise'/> [Devise](https://github.com/plataformatec/devise) – User Management and Authentication
 - <img width='25' height='25' src='https://img.stackshare.io/service/2203/default_9058af6f02375a99f634f537d727e32df92ac262.png' alt='UglifyJS'/> [UglifyJS](http://lisperator.net/uglifyjs/) – Javascript Utilities & Libraries
-- <img width='25' height='25' src='https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png' alt='SQL'/> [SQL](https://en.wikipedia.org/wiki/SQL) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/2539/logo.png' alt='RSpec'/> [RSpec](https://rspec.info/) – Testing Frameworks
-- <img width='25' height='25' src='https://img.stackshare.io/service/2542/AqsQWFu-_400x400.jpg' alt='Paperclip'/> [Paperclip](https://github.com/thoughtbot/paperclip) – File Uploads
-- <img width='25' height='25' src='https://img.stackshare.io/service/2595/capybara.png' alt='Capybara'/> [Capybara](http://jnicklas.github.io/capybara/) – Testing Frameworks
-- <img width='25' height='25' src='https://img.stackshare.io/service/460/Lu6cGu0z_400x400.png' alt='Travis CI'/> [Travis CI](http://travis-ci.com/) – Continuous Integration
 
 Full tech stack [here](/techstack.md)
 
@@ -52,7 +52,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [tstangenberg/future_kids](https://github.com/tstangenberg/future_kids)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|42<br/>Tools used|01/31/24 <br/>Report generated|
+|42<br/>Tools used|02/29/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -260,7 +260,7 @@ Full tech stack [here](/techstack.md)
 |[therubyracer](https://rubygems.org/therubyracer)|v0.10.1|09/01/12|seb |MIT|N/A|
 |[uglifier](https://rubygems.org/uglifier)|v1.2.4|05/29/12|seb |MIT|[CVE-2015-8857](https://github.com/advisories/GHSA-34r7-q49f-h37c) (Critical)|
 |[whenever](https://rubygems.org/whenever)|v0.8.2|05/28/13|seb |MIT|N/A|
-|[yard](https://rubygems.org/yard)|v0.8.1|04/24/11|seb |MIT|[CVE-2017-17042](https://github.com/advisories/GHSA-gj4p-3wh3-2rmf) (High)<br/>[CVE-2019-1020001](https://github.com/advisories/GHSA-xfhh-rx56-rxcr) (High)|
+|[yard](https://rubygems.org/yard)|v0.8.1|04/24/11|seb |MIT|[CVE-2017-17042](https://github.com/advisories/GHSA-gj4p-3wh3-2rmf) (High)<br/>[CVE-2019-1020001](https://github.com/advisories/GHSA-xfhh-rx56-rxcr) (High)<br/>[CVE-2024-27285](https://github.com/advisories/GHSA-8mq4-9jjh-9xrc) (Moderate)|
 
 <br/>
 <div align='center'>
